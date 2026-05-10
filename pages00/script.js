@@ -29,37 +29,46 @@ function displayMovieDetails(item) {
   loadTrailer();
 
 function loadTrailer() {
-  fetch(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${apiKey}`)
+
+  fetch(`https://api.themoviedb.org/3/${mediaType}/${movieId}/videos?api_key=${apiKey}`)
     .then(res => res.json())
     .then(data => {
 
       const trailer = data.results.find(
-        video => video.type === "Trailer" && video.site === "YouTube"
+        video =>
+          video.site === "YouTube" &&
+          (
+            video.type === "Trailer" ||
+            video.type === "Teaser"
+          )
       );
 
       if (trailer) {
+
         document.getElementById("trailer").src =
           `https://www.youtube.com/embed/${trailer.key}`;
+
       } else {
 
-  const movieName = document.getElementById("tittle").textContent;
+        const movieName =
+          document.getElementById("tittle").textContent;
 
-  document.getElementById("trailer-container").innerHTML = `
-  
-    <div class="fallback-trailer">
-      <p>No official trailer found.</p>
+        document.getElementById("trailer-container").innerHTML = `
+          <div class="fallback-trailer">
 
-      <a 
-        href="https://www.youtube.com/results?search_query=${movieName}+official+trailer"
-        target="_blank"
-        class="watch-btn"
-      >
-        Watch Trailer on YouTube
-      </a>
-    </div>
+            <p>No official trailer found.</p>
 
-  `;
-}
+            <a
+              href="https://www.youtube.com/results?search_query=${movieName}+official+trailer"
+              target="_blank"
+              class="watch-btn"
+            >
+              Watch Trailer on YouTube
+            </a>
+
+          </div>
+        `;
+      }
 
     });
 }
