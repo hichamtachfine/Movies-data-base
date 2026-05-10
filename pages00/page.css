@@ -1,0 +1,181 @@
+#a112{
+    display: flex;
+    
+    
+}
+#poster{
+    height: 320px;
+    width: 200px;
+    margin-left: 20px;
+    border-radius: 16px;
+    margin-top: 50px;
+}
+#tittle{
+    margin-left: 20px;
+    margin-top: 70px;
+}
+a{
+    text-decoration: none;
+}
+.tittle:hover{
+    color: #910000;
+}
+.tittle{
+    align-items: left ;
+
+
+    color: white;
+    
+}
+header{
+background: linear-gradient(to right, #000000, #434343);
+  color: white;
+ padding: 5px;
+ 
+ width: auto;
+ display: flex;
+ justify-content: space-between;
+
+}
+#search-wrapper {
+  display: flex;
+  align-items: center;
+  position: fixed;   /* move the fixed positioning HERE instead */
+  right: 20px;
+  top: 10px;
+}
+#search-wrapper:hover #search {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+#search{
+    padding-left: 10px;
+    margin-top: 10px;
+    padding-right: 100px;
+    position: fixed;
+    right: 75px;
+    text-align: left;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 16px;
+    
+    margin-left: 5px;
+    width: 400px;
+    height: 40px;
+
+
+
+}
+#btn:hover #search {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #0f172a;
+  color: white;
+}
+
+#btn{
+    width: 70px;
+    height: 47px;
+    border-radius: 16px;
+    margin-top: 10px;
+    
+   
+}
+#btn:hover {
+    color: #910000;
+    background-color: #302f2f;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+    
+}
+.foot{
+    text-align: center;
+    height: 10px;
+    
+}
+footer {
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.oo{
+    font-style: italic;
+    
+}
+#date ,#rating,#overview ,#genre{
+    display: flex;
+    margin-left: 20px;
+    width: 700px;
+    
+    
+}
+#date-num ,#rating-num,#overview-text ,#genre-text{
+    margin-left: 5px;
+}
+
+#trailer-container {
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#trailer {
+  width: 90%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 12px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #06113C;
+}
+
+main {
+    flex: 1;
+}
+
+
+.fallback-trailer {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+.watch-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+
+    background: #ff0000;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.watch-btn:hover {
+    background: #cc0000;
+}

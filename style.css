@@ -1,0 +1,112 @@
+#a112{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    
+}
+.tittle{
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    
+}
+header{
+     background: linear-gradient(to right, #000000, #434343);
+  color: white;
+ padding: 20px;
+ height: 100%;
+ width: auto;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #06113C;
+    color: white;
+}
+#searchbox{
+    padding-left: 10px;
+    padding-right: 100px;
+    text-align: left;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 16px;
+    
+    margin-left: 5px;
+    width: 500px;
+    height: 40px;
+}
+#btn{
+    width: 70px;
+    height: 47px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+    
+}
+#btn:hover{
+    color: #910000;
+    background-color: #302f2f;
+}
+.foot{
+    text-align: center;
+    height: 10px;
+    
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+    margin-top: 100px;
+}
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie img {
+  width: 100%;
+  border-radius: 8px;
+}
+.movie {
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #1e293b;
+  transition: transform 0.2s;
+}
+
+.movie:hover {
+  transform: scale(1.03);
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movie h3 {
+  padding: 8px;
+  font-size: 14px;
+  color: white;
+}
+
+.media-label {
+  font-size: 11px;
+  background: #910000;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin: 4px 8px;
+  display: inline-block;
+}
